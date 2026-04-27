@@ -1,3 +1,12 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyCMw5cy-qDwmLU-P4uO1Z5-ld5G1i_hhVY",
+  authDomain: "loginnovo-9bf5d.firebaseapp.com",
+  projectId: "loginnovo-9bf5d",
+  storageBucket: "loginnovo-9bf5d.firebasestorage.app",
+  messagingSenderId: "1013616302137",
+  appId: "1:1013616302137:web:d97cb11cf94b698524d5e8",
+  measurementId: "G-RDXT835JMW"
+};
 const btn = document.querySelector('button');
 const campoNome = document.getElementById('campo-nome');
 const campoEmail = document.getElementById('campo-email');
@@ -35,4 +44,4 @@ btn.addEventListener('click', function () {
     campoNome.value = "";
     campoEmail.value = "";
     campoSenha.value = "";
-});
+})
