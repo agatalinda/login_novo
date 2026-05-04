@@ -7,17 +7,20 @@
     <title>Login firebase</title>
 </head>
 <body>   
-   
-    <div class="login-container">
     <h4>Seja Bem-vindo! Sabor Raiz</h4>   
     <p>Faça seu login para acessar o nosso site</p>
     <P>Ao acessar o site, você poderá desfrutar de nossos produtos e serviços exclusivos.</P>
-    <h2>Login</h2>
+    <div class="container">
+        <h2>Login</h2>
     <script>
         var nome = window.prompt("Qual é o seu nome? ") 
         window.alert("Olá " + nome + " seja bem vindo ao meu site")
        
     </script> 
+     <div class="input-group">  
+    <label>Digite seu Nome</label>
+    <input type="email" id="email" placeholder="Digite seu nome">
+    </div>
     <div class="input-group">  
     <label>Digite seu E-mail</label>
     <input type="email" id="email" placeholder="meuemail5@email.com">
@@ -36,6 +39,24 @@
     
 
     </script>
+    <script>
+function Entrar() {
+    window.location.assign("home.html");
+}
+
+function cadastro() {
+    alert("Olá! Será encaminhado para o cadastro.");
+    document.getElementById("mensagem").innerText = "Redirecionando...";
+}
+</script>
+</script>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebasejs-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebasejs-auth.js"></script>
+    <script src="script.js">   
+
+    </script>
+    
     
     
 </body>
