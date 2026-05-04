@@ -14,11 +14,23 @@ body {
     height: 100vh;
     background: linear-gradient(120deg, #b284dd, #6e1597);
 }
-
-h3 {
-    color: white;
+/* Bloco de introdução */
+.intro {
+    text-align: center;
+    margin-bottom: 30px; /* espaço entre intro e login */
 }
 
+.intro h4 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    color: #f0f0f0;
+    font-size: 16px;
+    margin: 5px 0;
+}
 .container {
     background: #f6f2f2;
     padding: 30px;
