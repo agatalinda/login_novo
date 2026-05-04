@@ -9,11 +9,14 @@
 /* Tela de Login */
 body {
     display: flex;
-    justify-content: center;
-    align-items: center; /* Corrige o box-align */
-    height: 100vh;
+    flex-direction: column; /* intro em cima, login embaixo */
+    align-items: center;    /* centraliza horizontalmente */
+    justify-content: center; /* centraliza verticalmente */
+    min-height: 100vh;
     background: linear-gradient(120deg, #b284dd, #6e1597);
+    font-family: Arial, sans-serif;
 }
+
 /* Bloco de introdução */
 .intro {
     text-align: center;
@@ -31,14 +34,13 @@ body {
     font-size: 16px;
     margin: 5px 0;
 }
+
+/* Container do login */
 .container {
     background: #f6f2f2;
     padding: 30px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
     width: 300px;
-    gap: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
