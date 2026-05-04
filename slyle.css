@@ -4,16 +4,11 @@ body{
     justify-content: center;
     box-align:100vh;
     background: linear-gradient(120deg,#b284dd, #6e1597);
-
-h4{
-    color: white;
-  
-    justify-content: center;
-};
-
-p{
-    color: white;
-    justify-content: center;}
+}
+.login-container h4,
+.login-container p {
+  margin-bottom: 7px; /* afastamento de 7px */
+}
   
 }.container{
     background: white;
