@@ -3,72 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="slyle.css">
-    <title>Login firebase</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Login Firebase</title>
 </head>
 <body>   
     <h4>Seja Bem-vindo! Sabor Raiz</h4>   
     <p>Faça seu login para acessar o nosso site</p>
-    <P>Ao acessar o site, você poderá desfrutar de nossos produtos e serviços exclusivos.</P>
+    <p>Ao acessar o site, você poderá desfrutar de nossos produtos e serviços exclusivos.</p>
+
     <div class="container">
         <h2>Login</h2>
-    <script>
-        var nome = window.prompt("Qual é o seu nome? ") 
-        window.alert("Olá " + nome + " seja bem vindo ao meu site")
-       
-    </script> 
-     <div class="input-group">  
-    <label>Digite seu Nome</label>
-    <input type="email" id="email" placeholder="Digite seu nome">
-    </div>
-    <div class="input-group">  
-    <label>Digite seu E-mail</label>
-    <input type="email" id="email" placeholder="meuemail5@email.com">
-    </div>
-    <div class="input-group">
-    <label>Digite sua senha</label>
-     <input type="password" id="senha" placeholder="Android123@">
-    </div>
-    <button onclick="Login ()"> Entrar</button>
-    <button id="buttons" onclick="Login ()"> Cadastro</button>
-    <p id="mensagem"></p>
-    </div>
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebasejs-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebasejs-auth.js"></script>
-    <script src="script.js">  
-    
 
+        <div class="input-group">  
+            <label>Digite seu Nome</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+        </div>
+        <div class="input-group">  
+            <label>Digite seu E-mail</label>
+            <input type="email" id="email" placeholder="meuemail5@email.com">
+        </div>
+        <div class="input-group">
+            <label>Digite sua senha</label>
+            <input type="password" id="senha" placeholder="Android123@">
+        </div>
+
+        <button onclick="entrar()">Entrar</button>
+        <button onclick="cadastro()">Cadastro</button>
+        <p id="mensagem"></p>
+    </div>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        function entrar() {
+            window.location.assign("home.html");
+        }
+
+        function cadastro() {
+            alert("Olá! Será encaminhado para o cadastro.");
+            document.getElementById("mensagem").innerText = "Redirecionando...";
+        }
     </script>
-    <script>
-function Entrar() {
-    window.location.assign("home.html");
-}
-
-function cadastro() {
-    alert("Olá! Será encaminhado para o cadastro.");
-    document.getElementById("mensagem").innerText = "Redirecionando...";
-}
-</script>
-
-    </div>
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebasejs-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebasejs-auth.js"></script>
-    <script src="script.js">   
-
-    </script>
-    <script>
-function Entrar() {
-    window.location.assign("home.html");
-}
-
-function cadastro() {
-    alert("Olá! Será encaminhado para o cadastro.");
-    document.getElementById("mensagem").innerText = "Redirecionando...";
-}
-</script>
-
-    
-    
-    
 </body>
 </html>
