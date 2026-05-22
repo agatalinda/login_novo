@@ -169,3 +169,59 @@ header {
     font-size: 20px;
     color: #333;
 }
+
+/* cadastro */
+
+
+/*cadastro*/
+
+body.cadastro {
+    font-family: Arial, sans-serif;
+    background-color: #b69014;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg,#b284dd, #6e1597);
+}
+
+input.in { 
+    padding: 10px;
+    border: none;
+    background: #ebeb88;
+    color: rgb(24, 23, 23);
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 10px; /* ADICIONADO: afastamento entre inputs */
+}
+
+button.buttoncadastro {
+    padding: 10px;
+    border:none;
+    background: #0dda40;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px; /* ADICIONADO: afastamento do botão em relação aos inputs */
+}
+
+div.containerin {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 15px; /* ALTERADO: aumentei o gap para dar mais espaço interno */
+    margin: 20px auto; /* ADICIONADO: afastamento externo da caixa em relação à página */
+}           
+
+form.cadastrarForm {
+    background: rgb(169, 19, 199);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 15px; /* ALTERADO: aumentei o gap para espaçar os elementos do formulário */
+    justify-content: center;
+    margin: 20px auto; /* ADICIONADO: afastamento externo do formulário */
+}
